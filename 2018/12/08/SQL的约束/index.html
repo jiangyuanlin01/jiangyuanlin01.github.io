@@ -81,17 +81,17 @@
 
 
 
-<meta name="description" content="Mysql@[TOC](linux系统下SQL的约束123456789101112131415161718192021git clone https://github.com/shiyanlou/SQL3.git#用git命令下载数据文件source /home/shiyanlou/Desktop/SQL3/MySQL-03-01.sql;#恢复下载的数据文件Create table emplo">
+<meta name="description" content="@[TOC](linux系统下SQL的约束123456789101112131415161718192021git clone https://github.com/shiyanlou/SQL3.git#用git命令下载数据文件source /home/shiyanlou/Desktop/SQL3/MySQL-03-01.sql;#恢复下载的数据文件Create table employee(id">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Abigale&#39;s Blog">
+<meta property="og:title" content="Mysql">
 <meta property="og:url" content="https://yoursite.com/2018/12/08/SQL的约束/index.html">
 <meta property="og:site_name" content="Abigale&#39;s Blog">
-<meta property="og:description" content="Mysql@[TOC](linux系统下SQL的约束123456789101112131415161718192021git clone https://github.com/shiyanlou/SQL3.git#用git命令下载数据文件source /home/shiyanlou/Desktop/SQL3/MySQL-03-01.sql;#恢复下载的数据文件Create table emplo">
+<meta property="og:description" content="@[TOC](linux系统下SQL的约束123456789101112131415161718192021git clone https://github.com/shiyanlou/SQL3.git#用git命令下载数据文件source /home/shiyanlou/Desktop/SQL3/MySQL-03-01.sql;#恢复下载的数据文件Create table employee(id">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-10T14:13:46.890Z">
+<meta property="og:updated_time" content="2018-12-10T15:11:24.553Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Abigale&#39;s Blog">
-<meta name="twitter:description" content="Mysql@[TOC](linux系统下SQL的约束123456789101112131415161718192021git clone https://github.com/shiyanlou/SQL3.git#用git命令下载数据文件source /home/shiyanlou/Desktop/SQL3/MySQL-03-01.sql;#恢复下载的数据文件Create table emplo">
+<meta name="twitter:title" content="Mysql">
+<meta name="twitter:description" content="@[TOC](linux系统下SQL的约束123456789101112131415161718192021git clone https://github.com/shiyanlou/SQL3.git#用git命令下载数据文件source /home/shiyanlou/Desktop/SQL3/MySQL-03-01.sql;#恢复下载的数据文件Create table employee(id">
 
 
 
@@ -127,7 +127,7 @@
 
 
 
-  <title> | Abigale's Blog</title>
+  <title>Mysql | Abigale's Blog</title>
   
 
 
@@ -344,7 +344,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline"></h1>
+          <h1 class="post-title" itemprop="name headline">Mysql</h1>
         
 
         <div class="post-meta">
@@ -394,8 +394,7 @@
       
 
       
-        <hr>
-<h2 id="Mysql"><a href="#Mysql" class="headerlink" title="Mysql"></a>Mysql</h2><p>@[TOC](linux系统下SQL的约束<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">git clone https:<span class="comment">//github.com/shiyanlou/SQL3.git</span></span><br><span class="line">#用git命令下载数据文件</span><br><span class="line">source /home/shiyanlou/Desktop/SQL3/MySQL<span class="number">-03</span><span class="number">-01.</span>sql;</span><br><span class="line">#恢复下载的数据文件</span><br><span class="line">Create table employee(id int(<span class="number">10</span>) primary key, name char(<span class="number">20</span>));</span><br><span class="line">主键的定义 </span><br><span class="line">Create table employee(id int(<span class="number">10</span>) primary key, name char(<span class="number">20</span>));</span><br><span class="line">另一种定义主键的方式Constraint dpt_pk primary key(dpt_name);</span><br><span class="line">复合主键</span><br><span class="line">Constraint proj_pk primary key(proj_name,proj_num);</span><br><span class="line">默认值约束</span><br><span class="line">People_num int(10) default ‘10’   #people_num有default约束，默认值为10，如果people_num的输入值为空，默认输入10</span><br><span class="line"></span><br><span class="line">唯一约束：规定一张表中一列的值不能有重复值</span><br><span class="line">Create table employee(id int(10),phone int(20) unique)#规定插入过程中phone的值不能有重复，数据重复是会插入失败。</span><br><span class="line">非空约束：被非空约束的列，插入是值必须为非空</span><br><span class="line">Create table employee(id int (10),salary int(20) not null)#salary被not null约束，插入数据时salary的值不能为空。</span><br><span class="line">外键约束：</span><br><span class="line">外键能确保数据的完整性，也可以体现表与表之间的关系</span><br><span class="line">Constraint emp_fk foreign key(in_dpt)reference department(dpt_name)</span><br><span class="line">#in_dpt定义为外键，参考列为department表的dpt_name列</span><br></pre></td></tr></table></figure></p>
+        <p>@[TOC](linux系统下SQL的约束<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">git clone https:<span class="comment">//github.com/shiyanlou/SQL3.git</span></span><br><span class="line">#用git命令下载数据文件</span><br><span class="line">source /home/shiyanlou/Desktop/SQL3/MySQL<span class="number">-03</span><span class="number">-01.</span>sql;</span><br><span class="line">#恢复下载的数据文件</span><br><span class="line">Create table employee(id int(<span class="number">10</span>) primary key, name char(<span class="number">20</span>));</span><br><span class="line">主键的定义 </span><br><span class="line">Create table employee(id int(<span class="number">10</span>) primary key, name char(<span class="number">20</span>));</span><br><span class="line">另一种定义主键的方式Constraint dpt_pk primary key(dpt_name);</span><br><span class="line">复合主键</span><br><span class="line">Constraint proj_pk primary key(proj_name,proj_num);</span><br><span class="line">默认值约束</span><br><span class="line">People_num int(10) default ‘10’   #people_num有default约束，默认值为10，如果people_num的输入值为空，默认输入10</span><br><span class="line"></span><br><span class="line">唯一约束：规定一张表中一列的值不能有重复值</span><br><span class="line">Create table employee(id int(10),phone int(20) unique)#规定插入过程中phone的值不能有重复，数据重复是会插入失败。</span><br><span class="line">非空约束：被非空约束的列，插入是值必须为非空</span><br><span class="line">Create table employee(id int (10),salary int(20) not null)#salary被not null约束，插入数据时salary的值不能为空。</span><br><span class="line">外键约束：</span><br><span class="line">外键能确保数据的完整性，也可以体现表与表之间的关系</span><br><span class="line">Constraint emp_fk foreign key(in_dpt)reference department(dpt_name)</span><br><span class="line">#in_dpt定义为外键，参考列为department表的dpt_name列</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -420,8 +419,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/12/04/mysql创建数据库并插入数据/" rel="next" title="">
-                <i class="fa fa-chevron-left"></i> 
+              <a href="/2018/12/04/mysql创建数据库并插入数据/" rel="next" title="Mysql">
+                <i class="fa fa-chevron-left"></i> Mysql
               </a>
             
           </div>
@@ -430,8 +429,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/12/08/Mysql/" rel="prev" title="">
-                 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/12/08/Mysql select语句详解/" rel="prev" title="Mysql">
+                Mysql <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -510,17 +509,8 @@ var jiathis_config={
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -571,22 +561,6 @@ var jiathis_config={
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Mysql"><span class="nav-number">1.</span> <span class="nav-text">Mysql</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
