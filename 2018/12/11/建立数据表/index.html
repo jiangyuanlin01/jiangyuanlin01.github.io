@@ -81,17 +81,17 @@
 
 
 
-<meta name="description" content="@[TOC](linux系统下mysql创建数据库并插入数据的命令行12345678910Create database mysql_shiyan;    #创建数据库mysql_shiyan Use mysql_shiyan;    #连接数据库mysql_shiyanCreate table employee (id int(10),name char(20),phone int(10));#">
+<meta name="description" content="@[TOC](建立数据表123456789import pymysqldb = pymysql.connect(host=&apos;homehost&apos;, user=&apos;root&apos;, password=&apos;123456&apos;, port=3306, db=&apos;spiders&apos;)#连接远程mysql服务器cursor = db.cursor()  #获取操作游标sql = &apos;create table if not ex">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Mysql">
-<meta property="og:url" content="https://yoursite.com/2018/12/04/mysql创建数据库并插入数据/index.html">
+<meta property="og:title" content="python">
+<meta property="og:url" content="https://yoursite.com/2018/12/11/建立数据表/index.html">
 <meta property="og:site_name" content="Abigale&#39;s Blog">
-<meta property="og:description" content="@[TOC](linux系统下mysql创建数据库并插入数据的命令行12345678910Create database mysql_shiyan;    #创建数据库mysql_shiyan Use mysql_shiyan;    #连接数据库mysql_shiyanCreate table employee (id int(10),name char(20),phone int(10));#">
+<meta property="og:description" content="@[TOC](建立数据表123456789import pymysqldb = pymysql.connect(host=&apos;homehost&apos;, user=&apos;root&apos;, password=&apos;123456&apos;, port=3306, db=&apos;spiders&apos;)#连接远程mysql服务器cursor = db.cursor()  #获取操作游标sql = &apos;create table if not ex">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-10T15:10:28.834Z">
+<meta property="og:updated_time" content="2018-12-11T10:30:39.963Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Mysql">
-<meta name="twitter:description" content="@[TOC](linux系统下mysql创建数据库并插入数据的命令行12345678910Create database mysql_shiyan;    #创建数据库mysql_shiyan Use mysql_shiyan;    #连接数据库mysql_shiyanCreate table employee (id int(10),name char(20),phone int(10));#">
+<meta name="twitter:title" content="python">
+<meta name="twitter:description" content="@[TOC](建立数据表123456789import pymysqldb = pymysql.connect(host=&apos;homehost&apos;, user=&apos;root&apos;, password=&apos;123456&apos;, port=3306, db=&apos;spiders&apos;)#连接远程mysql服务器cursor = db.cursor()  #获取操作游标sql = &apos;create table if not ex">
 
 
 
@@ -121,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="https://yoursite.com/2018/12/04/mysql创建数据库并插入数据/">
+  <link rel="canonical" href="https://yoursite.com/2018/12/11/建立数据表/">
 
 
 
 
 
-  <title>Mysql | Abigale's Blog</title>
+  <title>python | Abigale's Blog</title>
   
 
 
@@ -327,7 +327,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://yoursite.com/2018/12/04/mysql创建数据库并插入数据/">
+    <link itemprop="mainEntityOfPage" href="https://yoursite.com/2018/12/11/建立数据表/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Abigale">
@@ -344,7 +344,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Mysql</h1>
+          <h1 class="post-title" itemprop="name headline">python</h1>
         
 
         <div class="post-meta">
@@ -356,8 +356,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-04T18:58:30+08:00">
-                2018-12-04
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-11T18:30:39+08:00">
+                2018-12-11
               </time>
             
 
@@ -394,7 +394,7 @@
       
 
       
-        <p>@[TOC](linux系统下mysql创建数据库并插入数据的命令行<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Create database mysql_shiyan;    #创建数据库mysql_shiyan </span><br><span class="line">Use mysql_shiyan;    #连接数据库mysql_shiyan</span><br><span class="line">Create table employee (id int(<span class="number">10</span>),name char(<span class="number">20</span>),phone int(<span class="number">10</span>));</span><br><span class="line">#新建一张数据表employee,其中包含Id，name，phone三个参数</span><br><span class="line"></span><br><span class="line">Insert into employee(id,name,phone) values(<span class="number">01</span>,<span class="string">'Tom'</span>,<span class="number">110110110</span>);</span><br><span class="line">Insert into employee values (<span class="number">02</span>,<span class="string">'Jack'</span>,<span class="number">119119119</span>);</span><br><span class="line">Insert into employee(id,name) values (<span class="number">03</span>,<span class="string">'Rose'</span>);</span><br><span class="line">#向数据表employee中插入数据</span><br><span class="line">Select * from employee;    #查看employee表中是否插入数据</span><br></pre></td></tr></table></figure></p>
+        <p>@[TOC](建立数据表<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pymysql</span><br><span class="line"></span><br><span class="line">db = pymysql.connect(host=<span class="string">'homehost'</span>, user=<span class="string">'root'</span>, password=<span class="string">'123456'</span>, port=<span class="number">3306</span>, db=<span class="string">'spiders'</span>)</span><br><span class="line">#连接远程mysql服务器</span><br><span class="line">cursor = db.cursor()  #获取操作游标</span><br><span class="line">sql = <span class="string">'create table if not exists students (id varchar(255) not null, name varchar(255) not null, age int(20) not null, primary key (id))'</span></span><br><span class="line">#建数据表的mysql语句</span><br><span class="line">cursor.execute(sql)#execute语句执行SQL语句</span><br><span class="line">db.close() #关闭数据库</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -419,8 +419,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/12/04/mysql的安装及基本操作/" rel="next" title="Mysql">
-                <i class="fa fa-chevron-left"></i> Mysql
+              <a href="/2018/12/11/连接数据库/" rel="next" title="python">
+                <i class="fa fa-chevron-left"></i> python
               </a>
             
           </div>
@@ -429,8 +429,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/12/08/SQL的约束/" rel="prev" title="Mysql">
-                Mysql <i class="fa fa-chevron-right"></i>
+              <a href="/2018/12/11/插入数据/" rel="prev" title="python">
+                python <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>

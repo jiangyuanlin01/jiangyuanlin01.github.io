@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[python]]></title>
+    <url>%2F2018%2F12%2F11%2F%E6%8F%92%E5%85%A5%E6%95%B0%E6%8D%AE%2F</url>
+    <content type="text"><![CDATA[@[TOC](插入数据1234567891011121314151617import pymysqlid = '20120001'user = 'Bob'age = 20db = pymysql.connect(host='homehost', user='root', password='123456', port=3306, db='spiders')#连接数据库cursor = db.cursor()#获取操作游标sql = 'insert into students(id,name,age) values(%s,%s,%s)'try: cursor.execute(sql, (id, user, age))#以元组形式传入参数 db.commit() #提交数据到数据库# 异常处理except: db.rollback() #数据回滚db.close() #关闭数据库]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[python]]></title>
+    <url>%2F2018%2F12%2F11%2F%E5%BB%BA%E7%AB%8B%E6%95%B0%E6%8D%AE%E8%A1%A8%2F</url>
+    <content type="text"><![CDATA[@[TOC](建立数据表123456789import pymysqldb = pymysql.connect(host='homehost', user='root', password='123456', port=3306, db='spiders')#连接远程mysql服务器cursor = db.cursor() #获取操作游标sql = 'create table if not exists students (id varchar(255) not null, name varchar(255) not null, age int(20) not null, primary key (id))'#建数据表的mysql语句cursor.execute(sql)#execute语句执行SQL语句db.close() #关闭数据库]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[python]]></title>
+    <url>%2F2018%2F12%2F11%2F%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93%2F</url>
+    <content type="text"><![CDATA[@[TOC](数据库的连接1234567891011import pymysqldb = pymysql.connect(host='homehost', user='root', password='123456', port=3306, db='spiders')#连接远程mysql服务器cursor = db.cursor() #获取操作游标cursor.execute('select version()') #利用execute（）方法执行SQL语句，动态创建和执行SQL语句data = cursor.fetchone() #利用fetchone（）方法获取一条数据print('database version:', data)#获取mysql版本号cursor.execute("create database spiders default character set utf8")#创建数据库spiders，将该库的默认编码格式设置为utf8格式db.close() #关闭数据库连接]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[Mysql]]></title>
     <url>%2F2018%2F12%2F08%2Fmysql%20%E5%85%B6%E4%BB%96%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%2F</url>
     <content type="text"><![CDATA[@[TOC](linux系统下Mysql其他基本操作1234567891011121314151617181920212223242526272829git clone https://github.com/shiyanlou/SQL6 #复制代码sudo server mysql startmysql -u root -psource /root /SQL6/MySQL-06.sql索引：建立索引加快查询速度语法：Alter table 表名字 add index 索引名（列名）;Create index 索引名 on 表名（列名）;例：Alter table employee add index idx_id (id);#在employee表中的id列上建立索引名为idx_id的索引Create index idx_name on employee (name);查看建的索引： show index from 表名字;视图：视图是从一个或多个表中导出来的表，是一种虚拟存在的表。Create view 视图名 (列a,列b,列c) as select 列1,列2,列3 from 表名字;Create view v_emp (v_name,v_age,v_phone) as select name,age,phone from employee;导入：Load data infile ‘/var/lib/mysql-files/SQL6/in.txt’ into table employee;#将路径下的文件导入employee表中导出：Select * into outfile ‘/var/lib/mysql-files/out.txt’ from employee;#将employee表中的所有数据按如下路径导出备份Mysqldump -u root -p 数据库名&gt;备份文件名; #备份整个数据库Mysqldump -u root -p 数据库名 表名&gt;备份文件名; #备份整个表例：mysqldump -u root -p mysql_shiyan &gt; bak.sql;#将数据库mysql_shiyan备份成文件bak.sql恢复Mysql -u root -p test &lt; bak.sql; #将之前备份的文件恢复到test数据库中]]></content>

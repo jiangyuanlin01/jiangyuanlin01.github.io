@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yoursite.com/"/>
-  <updated>2018-12-10T15:09:49.867Z</updated>
+  <updated>2018-12-11T10:37:17.526Z</updated>
   <id>https://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,69 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python</title>
+    <link href="https://yoursite.com/2018/12/11/%E6%8F%92%E5%85%A5%E6%95%B0%E6%8D%AE/"/>
+    <id>https://yoursite.com/2018/12/11/插入数据/</id>
+    <published>2018-12-11T10:37:17.157Z</published>
+    <updated>2018-12-11T10:37:17.526Z</updated>
+    
+    <content type="html"><![CDATA[<p>@[TOC](插入数据<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pymysql</span><br><span class="line"></span><br><span class="line">id = <span class="string">'20120001'</span></span><br><span class="line">user = <span class="string">'Bob'</span></span><br><span class="line">age = <span class="number">20</span></span><br><span class="line"></span><br><span class="line">db = pymysql.connect(host=<span class="string">'homehost'</span>, user=<span class="string">'root'</span>, password=<span class="string">'123456'</span>, port=<span class="number">3306</span>, db=<span class="string">'spiders'</span>)</span><br><span class="line">#连接数据库</span><br><span class="line">cursor = db.cursor()#获取操作游标</span><br><span class="line">sql = <span class="string">'insert into students(id,name,age) values(%s,%s,%s)'</span></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    cursor.execute(sql, (id, user, age))#以元组形式传入参数</span><br><span class="line">    db.commit()   #提交数据到数据库</span><br><span class="line"># 异常处理</span><br><span class="line">except:</span><br><span class="line"> db.rollback()   #数据回滚</span><br><span class="line">db.close()   #关闭数据库</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;@[TOC](插入数据&lt;br&gt;&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>python</title>
+    <link href="https://yoursite.com/2018/12/11/%E5%BB%BA%E7%AB%8B%E6%95%B0%E6%8D%AE%E8%A1%A8/"/>
+    <id>https://yoursite.com/2018/12/11/建立数据表/</id>
+    <published>2018-12-11T10:30:39.889Z</published>
+    <updated>2018-12-11T10:30:39.963Z</updated>
+    
+    <content type="html"><![CDATA[<p>@[TOC](建立数据表<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pymysql</span><br><span class="line"></span><br><span class="line">db = pymysql.connect(host=<span class="string">'homehost'</span>, user=<span class="string">'root'</span>, password=<span class="string">'123456'</span>, port=<span class="number">3306</span>, db=<span class="string">'spiders'</span>)</span><br><span class="line">#连接远程mysql服务器</span><br><span class="line">cursor = db.cursor()  #获取操作游标</span><br><span class="line">sql = <span class="string">'create table if not exists students (id varchar(255) not null, name varchar(255) not null, age int(20) not null, primary key (id))'</span></span><br><span class="line">#建数据表的mysql语句</span><br><span class="line">cursor.execute(sql)#execute语句执行SQL语句</span><br><span class="line">db.close() #关闭数据库</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;@[TOC](建立数据表&lt;br&gt;&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;b
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>python</title>
+    <link href="https://yoursite.com/2018/12/11/%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <id>https://yoursite.com/2018/12/11/连接数据库/</id>
+    <published>2018-12-11T10:26:40.098Z</published>
+    <updated>2018-12-11T10:26:44.461Z</updated>
+    
+    <content type="html"><![CDATA[<p>@[TOC](数据库的连接<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pymysql</span><br><span class="line"></span><br><span class="line">db = pymysql.connect(host=<span class="string">'homehost'</span>, user=<span class="string">'root'</span>, password=<span class="string">'123456'</span>, port=<span class="number">3306</span>, db=<span class="string">'spiders'</span>)</span><br><span class="line">#连接远程mysql服务器</span><br><span class="line">cursor = db.cursor()  #获取操作游标</span><br><span class="line">cursor.execute('select version()')   #利用execute（）方法执行SQL语句，动态创建和执行SQL语句</span><br><span class="line">data = cursor.fetchone()    #利用fetchone（）方法获取一条数据</span><br><span class="line">print('database version:', data)#获取mysql版本号</span><br><span class="line">cursor.execute(<span class="string">"create database spiders default character set utf8"</span>)</span><br><span class="line">#创建数据库spiders，将该库的默认编码格式设置为utf8格式</span><br><span class="line">db.close()   #关闭数据库连接</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;@[TOC](数据库的连接&lt;br&gt;&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Mysql</title>
