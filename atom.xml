@@ -131,7 +131,7 @@
     <link href="https://yoursite.com/2018/12/08/Mysql%20select%E8%AF%AD%E5%8F%A5%E8%AF%A6%E8%A7%A3/"/>
     <id>https://yoursite.com/2018/12/08/Mysql select语句详解/</id>
     <published>2018-12-08T06:48:46.106Z</published>
-    <updated>2018-12-10T15:07:31.862Z</updated>
+    <updated>2018-12-13T10:45:52.556Z</updated>
     
     <summary type="html">
     
@@ -145,6 +145,12 @@
     
     </summary>
     
+      <category term="Mysql" scheme="https://yoursite.com/categories/Mysql/"/>
+    
+    
+      <category term="Mysql" scheme="https://yoursite.com/tags/Mysql/"/>
+    
+      <category term="select" scheme="https://yoursite.com/tags/select/"/>
     
   </entry>
   

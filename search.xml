@@ -29,6 +29,13 @@
     <title><![CDATA[Mysql]]></title>
     <url>%2F2018%2F12%2F08%2FMysql%20select%E8%AF%AD%E5%8F%A5%E8%AF%A6%E8%A7%A3%2F</url>
     <content type="text"><![CDATA[@[TOC](linux系统下mysql select语句详解1234567891011121314151617181920212223242526272829303132333435363738394041424344git clone https://github.com/shiyanlou/SQL4.git #下载代码sudo service mysql start #开启mysql服务mysql -u root -p #进入mysqlsource /root/SQL4/MySQL-04-01.sql #恢复刚刚下载的文件source /root/SQL4/MySQL-04-02.sql select语句的基本格式select 要查询的列名 from 表名 where 约束条件例： select name,age from employee where age&gt;22;Select name,age,phone from employee where name =’Mary’;And(且)与or(或)Select name,age from employee where age&lt;25 or age&gt;30;#在employee表中查找age大于30或小于25的人的name和ageSelect name,age from employee where age&gt;25 and age&lt;30;#在employee表中查找age大于25小于30的人的name和ageIn 和not inSelect name,age,phone,in_dpt from employee where in_dpt in (‘dpt3’,’dpt4’);#在employee表中查找dpt3和dpt4的name,age phoneSelect name,age,phone,in_dpt from employee where in_dpt not in (‘dpt3’,’dpt4’);#在employee表中查找不是dpt3和dpt4的name,age phone通配符：_代表一个未指定字符，%代表不定个未指定字符Select name,age,phone from employee where phone like ‘1101__’;#查找1101开头的6位数号码的name，age，phoneSelect name,age,phone from employee where name like ‘J%’;#查找首字母为J的人的name,age,phone对结果排序:order by和desc升序排列，asc降序排列Select name,age,salary,phone from employee order by salary desc;#按salary降序排列Select name,age,salary,phone from employee order by salary asc;#按salary升序排列SQL内置函数计算Count 计数 sum 求和 avg求平均值 max 最大值 min 最小值Select max(salary) as max_salary,min(salary) from employee;#在employee表中查找salary的最大值，最小值，最大值重命名为max_salary子查询Select of_dpt,count(proj_name) as count_project from project group by of_dpt having of_dpt in (select in_dpt from employee where name=’Tom’;#查找姓名为‘Tom’所在的部门做的工程数连接查询Select name,id,people_num from employee,department where employee.in_dpt=department.dpt_name order by id;#查询各员工所在部门的人数Join on 语法Select id,name,people_num from employee join department on employee.in_dpt=department.dpt_name order by id;]]></content>
+      <categories>
+        <category>Mysql</category>
+      </categories>
+      <tags>
+        <tag>Mysql</tag>
+        <tag>select</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[Mysql]]></title>
